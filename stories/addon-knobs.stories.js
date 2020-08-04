@@ -29,3 +29,18 @@ export const Template = () => {
     <p class='c-text'>${tmpText}</p>
   `
 }
+
+export const Button = () => {
+  const buttonText = text('Text', 'Button');
+  const buttonColor = color('backgroundColor', 'orange');
+  return `
+    <button style="background-color: ${buttonColor};">${buttonText}</button>
+  `
+}
+
+export const Headline = () => {
+  const headlineText = text('テキスト', '見出し');
+  return `
+    <h1>h1${headlineText}</h1><h2>h2${headlineText}</h2><h3>h3${headlineText}</h3><h4>h4${headlineText}</h4>
+  `
+}
